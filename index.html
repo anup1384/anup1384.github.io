@@ -144,6 +144,78 @@
       left: 0;
       font-weight: bold;
     }
+    .experience-item {
+      margin-bottom: 40px;
+      padding-bottom: 30px;
+      border-bottom: 1px solid #e9ecef;
+    }
+    .experience-item:last-child {
+      border-bottom: none;
+      margin-bottom: 0;
+      padding-bottom: 0;
+    }
+    .job-title {
+      color: #2c5aa0;
+      font-size: 1.4em;
+      font-weight: 600;
+      margin-bottom: 5px;
+    }
+    .company {
+      color: #1a252f;
+      font-size: 1.2em;
+      font-weight: 500;
+      margin-bottom: 5px;
+    }
+    .duration {
+      color: #6c757d;
+      font-size: 1em;
+      margin-bottom: 15px;
+    }
+    .project-overview {
+      background: #f8f9fa;
+      padding: 20px;
+      border-radius: 6px;
+      margin-bottom: 20px;
+      border-left: 4px solid #2c5aa0;
+    }
+    .project-overview h4 {
+      color: #1a252f;
+      margin-bottom: 10px;
+      font-size: 1.1em;
+      font-weight: 600;
+    }
+    .project-overview p {
+      color: #495057;
+      line-height: 1.6;
+      margin: 0;
+    }
+    .technologies {
+      font-style: italic;
+      color: #6c757d;
+      margin-bottom: 15px;
+    }
+    .certifications-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
+      margin-top: 20px;
+    }
+    .certification-item {
+      background: #f8f9fa;
+      padding: 20px;
+      border-radius: 6px;
+      border-left: 4px solid #28a745;
+    }
+    .certification-item h4 {
+      color: #1a252f;
+      margin-bottom: 5px;
+      font-size: 1.1em;
+    }
+    .certification-item p {
+      color: #6c757d;
+      margin: 0;
+      font-size: 0.9em;
+    }
     @media (max-width: 768px) {
       .container {
         padding: 20px 15px;
@@ -157,6 +229,9 @@
       .contact-info {
         gap: 25px;
       }
+      .certifications-grid {
+        grid-template-columns: 1fr;
+      }
     }
   </style>
 </head>
@@ -165,25 +240,25 @@
     <div class="header">
       <h1>Anup Dubey</h1>
       <p class="title">Senior DevOps Manager | Cloud Infrastructure Specialist</p>
-      <p class="tagline">Strategic technology leader with 12+ years of experience architecting enterprise-scale cloud infrastructure solutions. Proven track record of driving digital transformation through DevOps methodologies, automation, and scalable system design.</p>
+      <p class="tagline">DevOps Engineer with 12+ years of experience in automating CI/CD pipelines, infrastructure provisioning, and configuration management using Terraform, Ansible, Helm, AWS Lambda, and Python. Proficient in GitHub, Bitbucket, and GitLab for advanced code management. Led cloud migrations to AWS and GCP, achieving cost savings and scalability improvements. Implemented monitoring with Prometheus, ELK, and Loki stack. Skilled in leveraging cloud technologies and containerization(k8s/Kubernetes), Argocd, Istio for scalable, reliable solutions. Strong collaboration and problem-solving skills, dedicated to continuous improvement and innovation.</p>
     </div>
 
     <div class="content-section">
-      <h2>Technical Expertise</h2>
+      <h2>Technical Skills</h2>
       <div class="skills-grid">
         <div class="skill-category">
           <h3>Cloud Platforms</h3>
           <ul>
-            <li>Amazon Web Services (EC2, EKS, Lambda, RDS, S3)</li>
-            <li>Google Cloud Platform (GKE, Cloud Functions)</li>
+            <li>AWS (EC2, EKS, S3, Lambda, IAM, ELB, VPC, AMI, Route53, Autoscaling, WAF, SNS)</li>
+            <li>Google Cloud Platform (GKE)</li>
             <li>Multi-cloud Architecture & Strategy</li>
           </ul>
         </div>
         <div class="skill-category">
           <h3>Containerization & Orchestration</h3>
           <ul>
+            <li>Kubernetes (EKS, GKE)</li>
             <li>Docker & Docker Compose</li>
-            <li>Kubernetes (EKS, AKS, GKE)</li>
             <li>Helm Charts & Package Management</li>
             <li>Service Mesh Implementation (Istio)</li>
           </ul>
@@ -191,9 +266,9 @@
         <div class="skill-category">
           <h3>CI/CD & Automation</h3>
           <ul>
-            <li>GitHub Actions & GitLab CI</li>
-            <li>Jenkins Pipeline Development</li>
+            <li>GitLab CI, Jenkins Pipeline Development</li>
             <li>ArgoCD GitOps Implementation</li>
+            <li>Argo Rollouts & Spinnaker</li>
             <li>Ansible Configuration Management</li>
           </ul>
         </div>
@@ -201,8 +276,8 @@
           <h3>Infrastructure as Code</h3>
           <ul>
             <li>Terraform Enterprise</li>
-            <li>Pulumi Multi-language Support</li>
-            <li>Crossplane Resource Management</li>
+            <li>Packer for AMI Creation</li>
+            <li>Boto3 & AWS CLI</li>
           </ul>
         </div>
         <div class="skill-category">
@@ -210,8 +285,8 @@
           <ul>
             <li>Prometheus & Grafana Stack</li>
             <li>ELK Stack (Elasticsearch, Logstash, Kibana)</li>
-            <li>Distributed Tracing (Jaeger)</li>
-            <li>Datadog APM & Infrastructure Monitoring</li>
+            <li>Loki Stack & Tempo</li>
+            <li>CloudWatch & Alertmanager</li>
           </ul>
         </div>
         <div class="skill-category">
@@ -222,19 +297,169 @@
             <li>YAML/JSON Configuration</li>
           </ul>
         </div>
+        <div class="skill-category">
+          <h3>Databases & Messaging</h3>
+          <ul>
+            <li>MySQL, PostgreSQL, Redis</li>
+            <li>Apache Kafka & MirrorMaker</li>
+            <li>Data Warehousing Solutions</li>
+          </ul>
+        </div>
+        <div class="skill-category">
+          <h3>Security & Compliance</h3>
+          <ul>
+            <li>HashiCorp Vault</li>
+            <li>Kaveno for Kubernetes Security</li>
+            <li>Trivy Vulnerability Scanning</li>
+            <li>CIS Benchmarking</li>
+          </ul>
+        </div>
+        <div class="skill-category">
+          <h3>Other Tools</h3>
+          <ul>
+            <li>Nginx, Jira, Fluentd, Filebeat</li>
+            <li>DNS Management</li>
+            <li>Git Version Control</li>
+            <li>Maven, PIP Package Management</li>
+          </ul>
+        </div>
       </div>
     </div>
 
     <div class="content-section">
-      <h2>Professional Summary</h2>
-      <p>Senior DevOps professional with extensive experience in designing and implementing enterprise-grade cloud infrastructure solutions. Demonstrated expertise in:</p>
+      <h2>Professional Experience</h2>
+      
+      <div class="experience-item">
+        <div class="job-title">Senior DevOps Manager</div>
+        <div class="company">Paytm, Noida, Uttar Pradesh</div>
+        <div class="duration">December 2021 – Present</div>
+        <div class="project-overview">
+          <h4>Project: Paytm Payment Gateway 2.0</h4>
+          <p>Advanced version of Paytm's existing payment gateway services, designed to handle a larger volume of transactions, provide better security, and offer a seamless experience to both merchants and customers.</p>
+        </div>
+        <div class="technologies"><strong>Technologies:</strong> AWS cloud, Kubernetes(EKS), ISTIO service mesh, API Gateway, Kafka, Prometheus, Alertmanager, Grafana, Elasticsearch, Loki, Filebeat, Vault, ArgoCD, Argo-Rollout, Jenkins, Redis, Tempo</div>
+        <ul>
+          <li>Deployed 100 microservices in Kubernetes with Istio, implementing GitOps practices using ArgoCD and Helm charts for controlled traffic-based rollouts and automated progressive updates</li>
+          <li>Improved visibility and security through the Istiod service mesh and enabled dynamic resource scaling using Cluster Autoscaler and KEDA in Kubernetes</li>
+          <li>Implemented Kaveno for Kubernetes to enforce security policies at the admission stage, ensuring compliance with organizational standards</li>
+          <li>Managed secrets securely using Kubernetes Secrets and integrated with HashiCorp Vault</li>
+          <li>Migrated kubernetes services workload from AMD instance type to Graviton using multi arch docker images and autoscaling, resulting in significant cost savings</li>
+          <li>Applied Kubernetes security best practices such as RBAC, network policies, and pod security policies</li>
+          <li>Utilized Trivy for comprehensive Docker image scanning to identify and mitigate vulnerabilities</li>
+          <li>Implemented centralized logging and tracing with Loki, Grafana, Tempo, and Promtail for Istio logs</li>
+          <li>Designed and implemented CI/CD pipelines using Jenkins and GitLab CI, automating build, test, and deployment processes</li>
+          <li>Ensured security compliance by integrating SAST and DAST security checks in the pipeline</li>
+          <li>Automated versioning and artifact management with Artifactory, Nexus, and Docker Hub</li>
+          <li>Wrote numerous Python and Shell scripts, automating daily tasks and enhancing operational efficiency</li>
+          <li>Experienced in setting up AWS API Gateway solutions for authorization and authentication</li>
+          <li>Managed Apache Kafka clusters, facilitating real-time data streaming and integration</li>
+          <li>Developed and maintained hardened AMIs in compliance with CIS benchmarking policies using Packer and Ansible</li>
+        </ul>
+      </div>
+
+      <div class="experience-item">
+        <div class="job-title">Data Engineer</div>
+        <div class="company">Gojek, Bengaluru, Karnataka</div>
+        <div class="duration">April 2021 – September 2021</div>
+        <div class="project-overview">
+          <h4>Project: Gojek Kafka Data Warehousing & Application Management</h4>
+          <p>Scalable, real-time data pipeline using Apache Kafka for data warehousing, alongside deploying and managing applications that use this data, ensuring smooth lifecycle management.</p>
+        </div>
+        <div class="technologies"><strong>Technologies:</strong> Google Cloud, Google Kubernetes Engine (GKE), Kafka, Prometheus, Alertmanager, Grafana, Elasticsearch, Filebeat, Vault, GitLab CICD</div>
+        <ul>
+          <li>Managed Kubernetes environments and coordinated application migrations for optimal performance</li>
+          <li>Deployed containerized applications on Google Kubernetes Engine (GKE), ensuring high availability and scalability</li>
+          <li>Optimized Kubernetes cluster resource usage, scaling applications dynamically based on workload requirements</li>
+          <li>Configured CI/CD pipelines for automated deployments, integrating Helm and ArgoCD for efficient release management</li>
+          <li>Written terraform modules to create GKE using GitLab CICD pipeline runner</li>
+          <li>Employed Chef to automate the configuration of Kafka and Kafka MirrorMaker</li>
+          <li>Used Filebeat to collect logs from Kafka servers, shipping to Elasticsearch cluster using Logstash</li>
+        </ul>
+      </div>
+
+      <div class="experience-item">
+        <div class="job-title">Lead DevOps Engineer</div>
+        <div class="company">Paytm, Noida, Uttar Pradesh</div>
+        <div class="duration">July 2018 – April 2021</div>
+        <div class="project-overview">
+          <h4>Project: Paytm Insurance & Paytm Mall</h4>
+          <p>Integration of Paytm's insurance platform and e-commerce mall, offering seamless access to insurance services and online shopping with secure payments and cashback options.</p>
+        </div>
+        <div class="technologies"><strong>Technologies:</strong> AWS cloud, Kubernetes(EKS), Prometheus, Alertmanager, Grafana, Elasticsearch, Filebeat, Vault, ArgoCD, Argo-Rollout, Jenkins, Redis, Ansible</div>
+        <ul>
+          <li>Managed and orchestrated containerized applications in Kubernetes clusters, implementing Helm charts for efficient deployment</li>
+          <li>Optimized Kubernetes environments for performance and cost, utilizing features like pod autoscaling and resources</li>
+          <li>Utilized ArgoCD for GitOps-driven continuous delivery, automating application deployment</li>
+          <li>Designed and maintained CI/CD pipelines in Jenkins, automating build, test, and deployment processes</li>
+          <li>Implemented configuration management using Ansible to maintain system consistency and reduce configuration drift</li>
+        </ul>
+      </div>
+
+      <div class="experience-item">
+        <div class="job-title">Cloud Engineer</div>
+        <div class="company">Broctagon IT Solution Pvt. Ltd, Noida, Uttar Pradesh</div>
+        <div class="duration">May 2017 - March 2018</div>
+        <ul>
+          <li>Configured and maintained cloud networking components, such as VPCs, subnets, load balancers, and security groups</li>
+          <li>Managed Servers and applications with High Availability and Robustness through AWS Autoscaling and ELB</li>
+          <li>Implemented log rotation policy, Server health check, and reporting via Zabbix</li>
+          <li>Created Ansible roles to automate the configuration and management of Apache Kafka and Elasticsearch clusters</li>
+          <li>Developed Jenkins pipelines that automatically trigger deployments to EC2 instances using CodeDeploy</li>
+        </ul>
+      </div>
+
+      <div class="experience-item">
+        <div class="job-title">System Engineer</div>
+        <div class="company">Yamaha Motors Solution Pvt. Ltd, Faridabad, Haryana</div>
+        <div class="duration">September 2014 - May 2017</div>
+        <ul>
+          <li>Handled DNS, MySQL, LAMP, Server and provided L2 support to customers</li>
+          <li>Monitored Server via Zabbix, SNMP, Queue monitoring, rate limiting</li>
+          <li>Troubleshoot ongoing issues of the client via tickets or calls</li>
+          <li>Designed and implemented custom AWS Virtual Private Clouds (VPCs), managed public and private subnets</li>
+          <li>Provisioned and configured EC2 instances for application hosting, optimizing instance types and configurations</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="content-section">
+      <h2>Trainings & Certifications</h2>
+      <div class="certifications-grid">
+        <div class="certification-item">
+          <h4>Certified Kubernetes Administrator (CKA)</h4>
+          <p>Udemy</p>
+        </div>
+        <div class="certification-item">
+          <h4>Kubernetes Certified Application Developer (CKAD)</h4>
+          <p>Udemy</p>
+        </div>
+        <div class="certification-item">
+          <h4>Infrastructure Automation with Terraform</h4>
+          <p>Udemy</p>
+        </div>
+        <div class="certification-item">
+          <h4>Istio Service Mesh</h4>
+          <p>KodeKloud</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="content-section">
+      <h2>Education</h2>
+      <p><strong>Bachelor of Technology | Computer Science</strong><br>
+      Uttar Pradesh Technical University | July 2009 – June 2013</p>
+    </div>
+
+    <div class="content-section">
+      <h2>Personal Information</h2>
       <ul>
-        <li>Architecting and deploying containerized applications on Kubernetes platforms</li>
-        <li>Implementing GitOps workflows for continuous deployment and infrastructure management</li>
-        <li>Optimizing cloud costs through strategic infrastructure automation and resource management</li>
-        <li>Building resilient, high-availability systems with disaster recovery capabilities</li>
-        <li>Establishing comprehensive monitoring, alerting, and observability systems</li>
-        <li>Leading organizational DevOps transformation initiatives and team development</li>
+        <li><strong>Address:</strong> Noida, Uttar Pradesh, India</li>
+        <li><strong>Mobile:</strong> +91-9711197051</li>
+        <li><strong>Sex:</strong> Male</li>
+        <li><strong>Nationality:</strong> Indian</li>
+        <li><strong>Marital Status:</strong> Single</li>
+        <li><strong>Languages Known:</strong> English and Hindi</li>
+        <li><strong>Sponsorship:</strong> Required elsewhere than in India</li>
       </ul>
     </div>
 
@@ -252,6 +477,10 @@
         <div class="contact-item">
           <strong>GitHub:</strong>
           <a href="https://github.com/anup1384" target="_blank">github.com/anup1384</a>
+        </div>
+        <div class="contact-item">
+          <strong>Medium:</strong>
+          <a href="https://anupdubey.medium.com" target="_blank">anupdubey.medium.com</a>
         </div>
       </div>
     </div>
